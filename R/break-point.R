@@ -77,7 +77,8 @@ autoplot.RDP_breakPoint <- function(object, CI='99%', ...) {
     
     if (!is.null(object$pos)) {
         gbp <- gbp + 
-            geom_rug(aes(.data[["Breakpoint position"]]), data=object$pos, 
+            geom_rug(aes(.data[["Breakpoint position"]]), 
+                    data=object$pos, 
                     inherit.aes=FALSE)
     }
 
@@ -89,7 +90,7 @@ autoplot.RDP_breakPoint <- function(object, CI='99%', ...) {
         orf$index <- 1:nrow(orf)
         orf$type <- sub("\\d+$", "", sub("\\s.*", "", orf$name))
         orf$direction=1
-        gorf <- plot_plasmid(orf, name="")  + 
+        gorf <- plot_plasmid(orf, name = "")  + 
                     coord_cartesian() +
                     scale_fill_simpsons()
         r <-range(layer_data(gorf, 3)$y)
