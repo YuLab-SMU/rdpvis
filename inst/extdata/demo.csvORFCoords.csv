@@ -1,0 +1,30 @@
+Start,Stop,Gene symbol
+ 1, 1394,gag-pol
+ 1394, 4511,gag-pol exon 2
+ 1389, 1394,gag-pol1
+ 1394, 1633,gag-pol exon 21
+ 1412, 4508,gag-pol2
+ 1634, 1942,gag-pol3
+ 1943, 3636,gag-pol4
+ 1943, 3276,gag-pol5
+ 3637, 4508,gag-pol6
+ 1, 1673,gag
+ 1, 451,gag1
+ 452, 1157,gag2
+ 1158, 1211,gag3
+ 1212, 1388,gag4
+ 1389, 1439,gag5
+ 1440, 1670,gag6
+ 4456, 5047,vif
+ 4987, 5202,vpr
+ 5204, 5306,vpr exon 2
+ 5278, 5510,tat
+ 8232, 8289,tat exon 2
+ 5426, 5510,rev
+ 8232, 8541,rev exon 2
+ 5558, 5833,vpu
+ 5727, 8690,env
+ 5832, 7586,env1
+ 7587, 8685,env2
+ 7780, 7133,asp
+ 8727, 9556,nef
