@@ -40,9 +40,9 @@ autoplot(x)
 
 ``` r
 f <- system.file("extdata", "break-point-matrix.csv", package="rdpvis")
-x <- read.csv(f, header=FALSE) |> as.matrix()
+x <- read.csv(f, header=FALSE)
 
-p <- rdpvis::matplot(x) 
+p <- mplot(x) 
 p2 <- p + scale_fill_gradientn(colors=c("grey", "blue", "red"))
 aplot::plot_list(p, p2, tag_levels='A')
 ```
