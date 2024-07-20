@@ -21,12 +21,31 @@ remotes::install_github("YuLab-SMU/rdpvis")
 
 ## :beginner: Usage
 
+![](rdp-screenshot.png)
+
+
+### Break point plot
+
 ``` r
 library(rdpvis)
-file <- system.file("extdata", "demo.csv", package="rdpvis")
-x <- read_rdp_breakpoint(file)
+f <- system.file("extdata", "demo.csv", package="rdpvis")
+x <- read_rdp_breakpoint(f)
 autoplot(x)
 ```
 
 ![](demo.png)
+
+### Break point matrix
+
+
+``` r
+f <- system.file("extdata", "break-point-matrix.csv", package="rdpvis")
+x <- read.csv(f, header=FALSE) |> as.matrix()
+
+p <- rdpvis::matplot(x) 
+p2 <- p + scale_fill_gradientn(colors=c("grey", "blue", "red"))
+aplot::plot_list(p, p2, tag_levels='A')
+```
+
+![](matrix.png)
 

@@ -10,8 +10,10 @@ Imports:
     aplot,
     ggplot2,
     ggsci,
+    grid,
     readr,
-    rlang
+    rlang,
+    yulab.utils
 Remotes:
     BradyAJohnston/plasmapR
 License: Artistic-2.0
